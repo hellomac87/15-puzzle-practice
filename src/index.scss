@@ -16,17 +16,27 @@ h1{
   text-align: center;
 }
 .puzzle{
+  width:300px;
+  margin: 0 auto;
+
   .row{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
     .col{
-      width:50px;
-      height: 60px;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border:1px solid #000;
+    width:60px;
+    height: 70px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #000;
+
+    &.empty{
+      background: #000;
+    }
     }
   }
+
 }
